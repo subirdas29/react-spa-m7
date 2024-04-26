@@ -11,6 +11,7 @@ function App() {
 
   const [carts, addCart]= useState([])
 
+  
   const handleAddCart = newCart => {
     const allCart = [...carts, newCart]
      addCart(allCart)
@@ -19,9 +20,13 @@ function App() {
 
 
   const handleRemove = id =>{
-      const removeCourse = carts.filter(cart=>cart.id!==id)
+    
+      const removeCourse = carts.filter((cart,index)=>index!==id)
       addCart(removeCourse)
+      console.log(removeCourse)
   }
+
+  
 
   return (
     <>

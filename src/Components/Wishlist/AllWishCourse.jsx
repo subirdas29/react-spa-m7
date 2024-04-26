@@ -4,7 +4,8 @@ import WishlistCourse from './WishlistCourse'
 
 const AllWishCourse = ({carts,handleRemove}) => {
 
-   
+    
+    
     
   return (
     <div className='lg:w-1/4 h-1/2'>
@@ -12,7 +13,7 @@ const AllWishCourse = ({carts,handleRemove}) => {
         <p>Add your Cart</p>
         </div>
       {
-        carts.map(cart => <WishlistCourse key={cart.id} handleRemove={handleRemove} cart={cart}></WishlistCourse>)
+        carts?.map((cart,index) => <WishlistCourse key={cart.id} index={index}  handleRemove={handleRemove} cart={cart}></WishlistCourse>)
       }
     </div>
   )
