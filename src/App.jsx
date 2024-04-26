@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Course from './Components/Courses/Course'
 import AllWishCourse from './Components/Wishlist/AllWishCourse'
+import Navbar from './Components/Navbar'
 
 function App() {
 
@@ -19,8 +20,8 @@ function App() {
 
   return (
     <>
-    
-     <div className='md:flex'>
+    <Navbar carts= {carts}></Navbar>
+     <div className='md:flex mx-14'>
      <Course handleAddCart= {handleAddCart}  ></Course>
      <AllWishCourse carts = {carts}></AllWishCourse>
      </div>

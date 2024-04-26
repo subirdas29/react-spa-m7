@@ -5,7 +5,7 @@ import WishlistCourse from './WishlistCourse'
 const AllWishCourse = ({carts}) => {
     console.log(carts)
   return (
-    <div>
+    <div className='ml-4'>
         <p>Add your Cart</p>
       {
         carts.map(cart => <WishlistCourse key={cart.id} cart={cart}></WishlistCourse>)

@@ -8,7 +8,7 @@ const WishlistCourse = ({cart}) => {
 
   return (
     
-      <div className="flex flex-col p-10 space-y-4  dark:bg-gray-50 dark:text-gray-800">
+      <div className="flex-col space-y-4  dark:bg-gray-50 dark:text-gray-800">
 	<h2 className="text-xl font-semibold">{cart.length}</h2>
 	<ul className="flex flex-col divide-y dark:divide-gray-300">
 		<li className="flex flex-col py-6 sm:flex-row sm:justify-between">

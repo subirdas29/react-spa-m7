@@ -14,7 +14,7 @@ const Course = ({handleAddCart}) => {
 
   
   return (
-<div className='lg:w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+<div className='lg:w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mr-4'>
   {
     courses.map(course => <AllCourse key={course.id} handleAddCart={handleAddCart}  course = {course}></AllCourse>)
   }
