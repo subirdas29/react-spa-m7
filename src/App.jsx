@@ -18,12 +18,17 @@ function App() {
   }
 
 
+  const handleRemove = id =>{
+      const removeCourse = carts.filter(cart=>cart.id!==id)
+      addCart(removeCourse)
+  }
+
   return (
     <>
     <Navbar carts= {carts}></Navbar>
-     <div className='md:flex mx-14'>
-     <Course handleAddCart= {handleAddCart}  ></Course>
-     <AllWishCourse carts = {carts}></AllWishCourse>
+     <div className='md:flex mt-10 mx-10'>
+     <Course handleAddCart= {handleAddCart} ></Course>
+     <AllWishCourse carts = {carts} handleRemove={handleRemove}></AllWishCourse>
      </div>
     </>
   )

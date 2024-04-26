@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const WishlistCourse = ({cart}) => {
+const WishlistCourse = ({cart,handleRemove}) => {
 	// console.log(cart)
-	const { name, img, price} = cart;
+	const { id,name, img, price} = cart;
 	
 
   return (
     
-      <div className="flex-col space-y-4  dark:bg-gray-50 dark:text-gray-800">
+      <div className="flex flex-col space-y-4  dark:bg-gray-50 dark:text-gray-800">
 	<h2 className="text-xl font-semibold">{cart.length}</h2>
 	<ul className="flex flex-col divide-y dark:divide-gray-300">
 		<li className="flex flex-col py-6 sm:flex-row sm:justify-between">
@@ -17,16 +17,16 @@ const WishlistCourse = ({cart}) => {
 				<div className="flex flex-col justify-between w-full pb-4">
 					<div className="flex pb-2">
 						<div className="space-y-1">
-							<h3 className="text-lg font-semibold ">{name}</h3>
+							<h3 className="text-lg font-semibold mr-4">{name}</h3>
 							<p className="text-sm dark:text-gray-600">Classic</p>
 						</div>
 						<div>
-							<p className="text-lg font-semibold">59.99</p>
-							<p className="text-sm line-through dark:text-gray-400">{price}</p>
+							<p className="text-lg font-semibold">{price}</p>
+							<p className="text-sm line-through dark:text-gray-400">120</p>
 						</div>
 					</div>
 					<div className="flex text-sm divide-x">
-						<button type="button" className="flex items-center px-2 py-1 pl-0 space-x-1">
+						<button onClick={()=>handleRemove(id)} type="button" className="flex items-center px-2 py-1 pl-0 space-x-1">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-4 h-4 fill-current">
 								<path d="M96,472a23.82,23.82,0,0,0,23.579,24H392.421A23.82,23.82,0,0,0,416,472V152H96Zm32-288H384V464H128Z"></path>
 								<rect width="32" height="200" x="168" y="216"></rect>
@@ -69,6 +69,7 @@ const WishlistCourse = ({cart}) => {
 
 WishlistCourse.propTypes = {
     cart: PropTypes.array,
+    handleRemove: PropTypes.func,
 }
 
 export default WishlistCourse

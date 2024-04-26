@@ -14,9 +14,9 @@ const Course = ({handleAddCart}) => {
 
   
   return (
-<div className='lg:w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mr-4'>
+<div className='lg:w-3/4 md:h-80 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  '>
   {
-    courses.map(course => <AllCourse key={course.id} handleAddCart={handleAddCart}  course = {course}></AllCourse>)
+    courses.map(course => <AllCourse key={course.id} handleAddCart={handleAddCart} course = {course}></AllCourse>)
   }
 </div>
 )
