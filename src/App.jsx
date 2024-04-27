@@ -18,10 +18,10 @@ function App() {
   
   }
 
+  
 
   const handleRemove = id =>{
-    
-      const removeCourse = carts.filter((cart,index)=>index!==id)
+      const removeCourse = carts.filter((cart)=>cart.id!==id)
       addCart(removeCourse)
       console.log(removeCourse)
   }
