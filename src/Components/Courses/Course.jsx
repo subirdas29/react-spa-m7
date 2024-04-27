@@ -22,7 +22,8 @@ const Course = ({handleAddCart}) => {
 )
 }
 Course.propTypes = {
-  handleAddCart: PropTypes.func.isRequired
+  handleAddCart: PropTypes.func,
+  handlePrice: PropTypes.func
 }
 
 

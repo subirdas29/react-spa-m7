@@ -1,45 +1,47 @@
 [
     {
-     "id" : "1",
+     "id" : 1,
       "name": "node",
       "img": "https://source.unsplash.com/random/300x300/?1",
-      "price": "$49.99",
-      "time": "08"
+      "price": 49.99,
+      "time": 8
+      
     },
     {
-        "id" : "2",
+        "id" : 2,
       "name": "mongoDB",
       "img": "https://source.unsplash.com/random/300x300/?2",
-      "price": "$29.99",
-      "time": "09"
+      "price": 29.99,
+      "time": 9
+      
     },
     {
-        "id" : "3",
+        "id" : 3,
       "name": "react",
       "img": "https://source.unsplash.com/random/300x300/?3",
-      "price": "$99.99",
-      "time": "10"
+      "price": 99.99,
+      "time": 10
     },
     {
-        "id" : "4",
+        "id" : 4,
       "name": "JS",
       "img": "https://source.unsplash.com/random/300x300/?4",
-      "price": "$39.99",
-      "time": "12"
+      "price": 39.99,
+      "time": 12
     },
     {
-        "id" : "5",
+        "id" : 5,
       "name": "Html",
       "img": "https://source.unsplash.com/random/300x300/?5",
-      "price": "$79.99",
-      "time": "11"
+      "price": 79.99,
+      "time": 11
     },
     {
-      "id" : "6",
+      "id" : 6,
       "name": "Css",
       "img": "https://source.unsplash.com/random/300x300/?6",
-      "price": "$59.99",
-      "time": "03"
+      "price": 59.99,
+      "time": 3
     }
   ]
   
