@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import WishlistCourse from './WishlistCourse'
 
-const AllWishCourse = ({carts,handleRemove,newPrice}) => {
+const AllWishCourse = ({carts,handleRemove,newPrice,newTime}) => {
 
     console.log(carts)
     
@@ -13,7 +13,7 @@ const AllWishCourse = ({carts,handleRemove,newPrice}) => {
         <p>Add your Cart</p>
         </div>
        <div className='flex justify-between mt-6'>
-       <p>Course Time</p>
+       <p>Course Time : {newTime}</p>
         <div className="space-y-1 text-right">
 		
     <p>Total amount:
@@ -32,7 +32,9 @@ const AllWishCourse = ({carts,handleRemove,newPrice}) => {
 
 AllWishCourse.propTypes = {
     carts: PropTypes.array,
-    handleRemove: PropTypes.func
+    handleRemove: PropTypes.func,
+    newPrice: PropTypes.number,
+    newTime: PropTypes.number,
 }
 
 export default AllWishCourse

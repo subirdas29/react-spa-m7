@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const AllCourse = ({course,handleAddCart,handlePrice}) => {
+const AllCourse = ({course,handleAddCart}) => {
     const {id, name, img, price, time} = course;
   return (
     <div>
@@ -17,7 +17,7 @@ const AllCourse = ({course,handleAddCart,handlePrice}) => {
         <p>Time: {time} h</p>
     </div>
     <div>
-      <button onClick={()=>handleAddCart(course,price)} className="px-6 py-2 mt-4 w-full border rounded-md dark:bg-violet-600 dark:text-gray-50 dark:border-violet-600">Add Cart</button>
+      <button onClick={()=>handleAddCart(course,price,time)} className="px-6 py-2 mt-4 w-full border rounded-md dark:bg-violet-600 dark:text-gray-50 dark:border-violet-600">Add Cart</button>
     </div>
     </div>
     </div>
