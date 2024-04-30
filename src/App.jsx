@@ -75,11 +75,13 @@ function App() {
       const removeCourse = carts.filter((cart)=>cart.id!==id)
       const removePrices = newPrice - parseFloat(idPrice)
       const removePrice = parseFloat(removePrices.toFixed(2))
+
       const addTime = parseInt(newTime - time)
       setNewTime(addTime)
       setNewPrice(removePrice)
       addCart(removeCourse)
       removeLs(id)
+      
   }
 
   return (
